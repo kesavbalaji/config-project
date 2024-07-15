@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 import java.util.List;
 
-@Service
-public class CustomUserDetailsService implements UserDetailsService {
+//@Service
+public class CustomUserDetailsService {
 
     private UserRepository userRepository;
 
@@ -20,15 +20,15 @@ public class CustomUserDetailsService implements UserDetailsService {
         this.userRepository = userRepository;
     }
 
-    @Override
-    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        User user = userRepository.findUserByEmail(email);
-        List<String> roles = Collections.singletonList(user.getRole());
-        return
-                org.springframework.security.core.userdetails.User.builder()
-                        .username(user.getEmail())
-                        .password(user.getPassword())
-                        .roles("USER")
-                        .build();
-    }
+//    @Override
+//    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+//        User user = userRepository.findUserByEmail(email);
+//        List<String> roles = Collections.singletonList(user.getRole());
+//        return
+//                org.springframework.security.core.userdetails.User.builder()
+//                        .username(user.getEmail())
+//                        .password(user.getPassword())
+//                        .roles("USER")
+//                        .build();
+//    }
 }

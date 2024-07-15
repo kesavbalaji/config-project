@@ -11,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("")
 public class AuthController {
 
-    @RequestMapping(value = "/login",method = RequestMethod.GET)
-    public String login(){
-        return "login";
-    }
+//    @RequestMapping(value = "/login",method = RequestMethod.GET)
+//    public String login(){
+//        return "login";
+//    }
 
-    @RequestMapping(value = "/welcome",method = RequestMethod.GET)
-    public String welcome(){
-        return "welcome";
-    }
+//    @RequestMapping(value = "/welcome",method = RequestMethod.GET)
+//    public String welcome(){
+//        return "welcome";
+//    }
 }

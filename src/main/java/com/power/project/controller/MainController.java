@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MainController {
 
-    @RequestMapping("/")
-    public String index(Model model) {
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        if (!(auth instanceof AnonymousAuthenticationToken))
-            return "dashboard";
-
-        // if it is not authenticated, then go to the index...
-        // other things ...
-        return "index";
-    }
+//    @RequestMapping("/")
+//    public String index(Model model) {
+//        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+//        if (!(auth instanceof AnonymousAuthenticationToken))
+//            return "dashboard";
+//
+//        // if it is not authenticated, then go to the index...
+//        // other things ...
+//        return "index";
+//    }
 }

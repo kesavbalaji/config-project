@@ -8,7 +8,7 @@
 <p th:if="${param.error}" class="error">Wrong email or password</p>
 <form th:action="@{/login}" method="post">
     <label for="email">Email</label>:
-    <input type="text" id="email" name="username" autofocus="autofocus" /> <br />
+    <input type="text" id="email" name="username" autofocus="autofocus" /> <br /> <br />
     <label for="password">Password</label>:
     <input type="password" id="password" name="password" /> <br />
     <input type="submit" value="Log in" />
